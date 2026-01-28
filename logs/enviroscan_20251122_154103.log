@@ -1,0 +1,12 @@
+2025-11-22 15:41:03,692 - root - INFO - Starting EnviroScan biodiversity monitoring system
+2025-11-22 15:41:03,693 - root - INFO - Authenticating with Google Earth Engine
+2025-11-22 15:41:07,894 - root - ERROR - Failed to authenticate with Google Earth Engine: Please authorize access to your Earth Engine account by running
+
+earthengine authenticate
+
+in your command line, or ee.Authenticate() in Python, and then retry.
+2025-11-22 15:41:07,895 - root - ERROR - Error in EnviroScan system: Please authorize access to your Earth Engine account by running
+
+earthengine authenticate
+
+in your command line, or ee.Authenticate() in Python, and then retry.

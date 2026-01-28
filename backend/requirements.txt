@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+rasterio
+geopandas
+scikit-learn
+earthengine-api
+streamlit
+folium
+opencv-python
+requests
+shapely
+plotly
+seaborn
+flask

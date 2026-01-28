@@ -1,0 +1,52 @@
+2025-11-22 15:30:14,253 - root - INFO - Starting EnviroScan biodiversity monitoring system
+2025-11-22 15:30:14,255 - root - INFO - Authenticating with Google Earth Engine
+2025-11-22 15:30:14,256 - root - WARNING - Earth Engine API not available. Running in simulation mode.
+2025-11-22 15:30:14,257 - root - INFO - Downloading and preprocessing satellite data
+2025-11-22 15:30:14,257 - root - INFO - Starting satellite data preprocessing
+2025-11-22 15:30:14,257 - root - INFO - Study area bounds: [78.56, 29.29, 79.15, 29.63]
+2025-11-22 15:30:14,258 - root - INFO - Analysis years: [2000, 2010, 2020, 2025]
+2025-11-22 15:30:14,258 - root - INFO - Processing data for year 2000
+2025-11-22 15:30:14,258 - root - INFO - Processing data for year 2010
+2025-11-22 15:30:14,259 - root - INFO - Processing data for year 2020
+2025-11-22 15:30:14,259 - root - INFO - Processing data for year 2025
+2025-11-22 15:30:14,259 - root - INFO - Satellite data preprocessing completed
+2025-11-22 15:30:14,260 - root - INFO - Calculating NDVI
+2025-11-22 15:30:14,260 - root - INFO - Starting NDVI calculation
+2025-11-22 15:30:14,260 - root - INFO - Calculating NDVI for year 2000
+2025-11-22 15:30:14,262 - root - INFO - Saved NDVI outputs for 2000 to E:\Enviroscan\output\ndvi_maps
+2025-11-22 15:30:14,262 - root - INFO - Calculating NDVI for year 2010
+2025-11-22 15:30:14,264 - root - INFO - Saved NDVI outputs for 2010 to E:\Enviroscan\output\ndvi_maps
+2025-11-22 15:30:14,264 - root - INFO - Calculating NDVI for year 2020
+2025-11-22 15:30:14,265 - root - INFO - Saved NDVI outputs for 2020 to E:\Enviroscan\output\ndvi_maps
+2025-11-22 15:30:14,266 - root - INFO - Calculating NDVI for year 2025
+2025-11-22 15:30:14,267 - root - INFO - Saved NDVI outputs for 2025 to E:\Enviroscan\output\ndvi_maps
+2025-11-22 15:30:14,268 - root - INFO - NDVI calculation completed
+2025-11-22 15:30:14,268 - root - INFO - Performing land cover classification
+2025-11-22 15:30:14,268 - root - INFO - Starting land cover classification
+2025-11-22 15:30:14,268 - root - INFO - Training Random Forest model for land cover classification
+2025-11-22 15:30:14,606 - root - INFO - Model training completed with accuracy: 0.20
+2025-11-22 15:30:14,646 - root - INFO - Saved trained model to E:\Enviroscan\models\random_forest_model.pkl
+2025-11-22 15:30:14,646 - root - INFO - Classifying land cover for year 2000
+2025-11-22 15:30:14,648 - root - INFO - Saved classification outputs for 2000 to E:\Enviroscan\output\classification_maps
+2025-11-22 15:30:14,648 - root - INFO - Classifying land cover for year 2010
+2025-11-22 15:30:14,649 - root - INFO - Saved classification outputs for 2010 to E:\Enviroscan\output\classification_maps
+2025-11-22 15:30:14,650 - root - INFO - Classifying land cover for year 2020
+2025-11-22 15:30:14,651 - root - INFO - Saved classification outputs for 2020 to E:\Enviroscan\output\classification_maps
+2025-11-22 15:30:14,651 - root - INFO - Classifying land cover for year 2025
+2025-11-22 15:30:14,653 - root - INFO - Saved classification outputs for 2025 to E:\Enviroscan\output\classification_maps
+2025-11-22 15:30:14,653 - root - INFO - Land cover classification completed
+2025-11-22 15:30:14,655 - root - INFO - Detecting environmental changes
+2025-11-22 15:30:14,655 - root - INFO - Starting change detection
+2025-11-22 15:30:14,656 - root - INFO - Detecting changes between 2000 and 2010
+2025-11-22 15:30:14,660 - root - INFO - Saved change detection outputs for 2000-2010 to E:\Enviroscan\output\change_maps
+2025-11-22 15:30:14,661 - root - INFO - Detecting changes between 2010 and 2020
+2025-11-22 15:30:14,664 - root - INFO - Saved change detection outputs for 2010-2020 to E:\Enviroscan\output\change_maps
+2025-11-22 15:30:14,664 - root - INFO - Detecting changes between 2020 and 2025
+2025-11-22 15:30:14,668 - root - INFO - Saved change detection outputs for 2020-2025 to E:\Enviroscan\output\change_maps
+2025-11-22 15:30:14,669 - root - INFO - Change detection completed
+2025-11-22 15:30:14,669 - root - INFO - Mapping species data
+2025-11-22 15:30:14,669 - root - INFO - Starting species data mapping
+2025-11-22 15:30:14,709 - root - INFO - Created simulated species data files: E:\Enviroscan\data\species\gbif_species.csv, E:\Enviroscan\data\species\ebird_observations.csv
+2025-11-22 15:30:14,710 - root - INFO - Created species mapping outputs: E:\Enviroscan\output\species_distribution.png, E:\Enviroscan\output\biodiversity_hotspots.png
+2025-11-22 15:30:14,711 - root - INFO - Species data mapping completed
+2025-11-22 15:30:14,712 - root - INFO - EnviroScan system completed successfully
