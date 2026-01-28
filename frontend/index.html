@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnviroScan - Biodiversity Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌍 EnviroScan</h1>
+        <p>Biodiversity Change Monitoring System</p>
+        <p>Case Study: Jim Corbett National Park</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#ndvi">NDVI Analysis</a></li>
+            <li><a href="#land-cover">Land Cover</a></li>
+            <li><a href="#change-detection">Change Detection</a></li>
+            <li><a href="#species">Species Distribution</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <div class="content">
+                <p>This system monitors biodiversity changes in Jim Corbett National Park using satellite imagery, machine learning, and data analytics.</p>
+                
+                <div class="study-area-info">
+                    <h3>Study Area: Jim Corbett National Park</h3>
+                    <ul>
+                        <li><strong>Location:</strong> Uttarakhand, India</li>
+                        <li><strong>Coordinates:</strong> 78.56°E - 79.15°E, 29.29°N - 29.63°N</li>
+                        <li><strong>Area:</strong> ~520 km²</li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-summary">
+                    <h3>Analysis Summary</h3>
+                    <ul>
+                        <li><strong>Data Source:</strong> Sentinel-2 & Landsat Satellite Imagery</li>
+                        <li><strong>Vegetation Index:</strong> NDVI (Normalized Difference Vegetation Index)</li>
+                        <li><strong>Classification:</strong> Forest/Water/Urban/Agriculture</li>
+                        <li><strong>Time Period:</strong> 2000, 2010, 2020, 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="ndvi">
+            <h2>NDVI Analysis</h2>
+            <div class="content">
+                <p>The Normalized Difference Vegetation Index (NDVI) is used to analyze vegetation health.</p>
+                <p>NDVI values range from -1 to 1:</p>
+                <ul>
+                    <li>Values close to 1 indicate healthy vegetation</li>
+                    <li>Values close to 0 indicate bare soil or sparse vegetation</li>
+                    <li>Negative values indicate water bodies</li>
+                </ul>
+                
+                <div class="visualization">
+                    <h3>NDVI Map - 2025</h3>
+                    <img src="placeholder.png" alt="NDVI Map" id="ndvi-map">
+                    <p class="visualization-note">Interactive NDVI visualization would appear here</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="land-cover">
+            <h2>Land Cover Classification</h2>
+            <div class="content">
+                <p>Land cover classification using Random Forest algorithm:</p>
+                <ul>
+                    <li><span class="forest">Forest</span> (Green)</li>
+                    <li><span class="water">Water</span> (Blue)</li>
+                    <li><span class="urban">Urban</span> (Gray)</li>
+                    <li><span class="agriculture">Agriculture</span> (Yellow)</li>
+                </ul>
+                
+                <div class="visualization">
+                    <h3>Land Cover Map - 2025</h3>
+                    <img src="placeholder.png" alt="Land Cover Map" id="land-cover-map">
+                    <p class="visualization-note">Interactive land cover visualization would appear here</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="change-detection">
+            <h2>Change Detection</h2>
+            <div class="content">
+                <p>Environmental changes detected by comparing NDVI values over time:</p>
+                
+                <div class="comparison-selector">
+                    <label for="comparison-period">Select Comparison Period:</label>
+                    <select id="comparison-period">
+                        <option value="2000-2010">2000 vs 2010</option>
+                        <option value="2010-2020">2010 vs 2020</option>
+                        <option value="2020-2025" selected>2020 vs 2025</option>
+                    </select>
+                </div>
+                
+                <div class="visualizations-container">
+                    <div class="visualization">
+                        <h3>Vegetation Loss Map</h3>
+                        <img src="placeholder.png" alt="Vegetation Loss Map" id="loss-map">
+                        <p class="visualization-note">Areas with decreased vegetation</p>
+                    </div>
+                    
+                    <div class="visualization">
+                        <h3>Vegetation Gain Map</h3>
+                        <img src="placeholder.png" alt="Vegetation Gain Map" id="gain-map">
+                        <p class="visualization-note">Areas with increased vegetation</p>
+                    </div>
+                    
+                    <div class="visualization">
+                        <h3>Change Heatmap</h3>
+                        <img src="placeholder.png" alt="Change Heatmap" id="heatmap">
+                        <p class="visualization-note">Overall change intensity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="species">
+            <h2>Species Distribution</h2>
+            <div class="content">
+                <p>Biodiversity data from GBIF and eBird observations:</p>
+                
+                <div class="species-data">
+                    <h3>Species Observations</h3>
+                    <table id="species-table">
+                        <thead>
+                            <tr>
+                                <th>Species</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>29.4°N, 78.8°E</td>
+                                <td>2020-01-15</td>
+                            </tr>
+                            <tr>
+                                <td>Leopard</td>
+                                <td>29.35°N, 78.9°E</td>
+                                <td>2020-02-20</td>
+                            </tr>
+                            <tr>
+                                <td>Elephant</td>
+                                <td>29.5°N, 79.0°E</td>
+                                <td>2020-03-10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="visualization">
+                    <h3>Species Distribution Map</h3>
+                    <img src="placeholder.png" alt="Species Distribution Map" id="species-map">
+                    <p class="visualization-note">Interactive species distribution map would appear here</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>EnviroScan Biodiversity Monitoring System | Case Study: Jim Corbett National Park</p>
+        <p>Data Sources: Google Earth Engine, GBIF, eBird</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
